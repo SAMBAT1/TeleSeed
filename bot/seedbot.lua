@@ -277,7 +277,6 @@ function create_config( )
 "addsudo",	
 "admin",	
 "anti_spam",	
-"all,	
 "set",	
 "setbye",	
 "SMS", 
