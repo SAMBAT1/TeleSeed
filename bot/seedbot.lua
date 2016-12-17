@@ -284,6 +284,7 @@ function create_config( )
 "time",
 "welcome",
 "bing",
+"map",
     },
     sudo_users = {110626080,103649648,111020322,0,tonumber(275579349)},--Sudo users
     moderation = {data = 'data/moderation.json'},
