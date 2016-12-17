@@ -5,7 +5,7 @@ local function run(msg)
     
     local data = load_data(_config.moderation.data)
     
-     if data[tostring(msg.to.id)]['settings']['lock_media'] == 'yes' then
+     if data[tostring(msg.to.id)]['settings']['lock_badw'] == 'yes' then
       
     
 if not is_momod(msg) then
@@ -20,13 +20,25 @@ chat_del_user('chat#id'..msg.to.id, 'user#id'..msg.from.id, ok_cb, true)
    end
 end
     
-return {
-patterns = {
-"%[(photo)%]",
-"%[(document)%]",
-"%[(video)%]",
-"%[(audio)%]",
-"%[(unsupported)%]",
-},
- run = run
-}
+return {patterns = {
+    "کیر",
+	"[Kk]ir",
+	"کص",
+	"جنده",
+	"لاشی",
+	"کونی",
+	"حرومزاده",
+	"حرومی",
+	"مادر سگ",
+        "ناموس",
+	"[Kk]os",
+	"[Jj]ende",
+	"[Ll]ashi",
+	"[Kk]ooni",
+	"[Hh]aroom",
+	"[Ff]uck",
+	"[Ff]cker",
+	"suck",
+    },
+    run = run
+    }

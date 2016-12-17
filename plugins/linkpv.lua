@@ -729,16 +729,16 @@ local function run(msg, matches)
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] revoked group link ")
       return export_chat_link(receiver, callback, true)
     end
-    if matches[1] == '  ' then
+    if matches[1] == 'لینک شخصی' then
       if not is_momod(msg) then
-        return "For moderators only!"
+        return "فقط برای مدیران"
       end
       local group_link = data[tostring(msg.to.id)]['settings']['set_link']
       if not group_link then 
-        return "Create a link using /newlink first !"
+        return "اول با دستور لینک جدید , لینک بساز"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-     send_large_msg('user#id'..msg.from.id, "🔰لینک گروه🔰:\n"..group_link)
+     send_large_msg('user#id'..msg.from.id, "⭕️لینک گروه شما:\n"..group_link)
     end
     if matches[1] == 'setowner' then
       if not is_owner(msg) then
@@ -838,11 +838,10 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-  "^  $",
+  "^لینک شخصی$",
   "%[(photo)%]",
   "^!!tgservice (.+)$",
   },
   run = run
 }
 end
---Iwas Lazy So I Just Removed Patterns And Didn't Del Junk Items

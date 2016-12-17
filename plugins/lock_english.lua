@@ -1,24 +1,24 @@
-local function run(msg, matches)
-    if is_momod(msg) then
-        return
-    end
+local function run(msg)
+
     local data = load_data(_config.moderation.data)
-    if data[tostring(msg.to.id)] then
-        if data[tostring(msg.to.id)]['settings'] then
-            if data[tostring(msg.to.id)]['settings']['english'] then
-                lock_english = data[tostring(msg.to.id)]['settings']['english']
-            end
-        end
-    end
-    local chat = get_receiver(msg)
-    local user = "user#id"..msg.from.id
-    if lock_english == "yes" then
-       delete_msg(msg.id, ok_cb, true)
-    end
-end
- 
+
+     if data[tostring(msg.to.id)]['settings']['lock_english'] == 'yes' then
+
+
+if not is_momod(msg) then
+
+
+chat_del_user('chat#id'..msg.to.id, 'user#id'..msg.from.id, ok_cb, true)
+    local msg = 'You cannot use English words here . Bye ! '
+   local receiver = msg.to.id
+    send_large_msg('chat#id'..receiver, msgads.."\n", ok_cb, false)
+
+      end
+   end
+
+
 return {
-  patterns = {
+patterns = {
 "[Aa](.*)",
 "[Bb](.*)",
 "[Cc](.*)",
@@ -45,6 +45,7 @@ return {
 "[Xx](.*)",
 "[Yy](.*)",
 "[Zz](.*)",
-  },
-  run = run
+}, 
+run = run
 }
+end
