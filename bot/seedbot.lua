@@ -317,8 +317,8 @@ Topkecleon
 Vamptacus
 
 Our channels:
-English: @TeleSeedCH
-Persian: @IranSeed
+English: @Bat_Strike
+Persian: @Bat_Strike
 ]],
     help_text_realm = [[
 Realm Commands:
