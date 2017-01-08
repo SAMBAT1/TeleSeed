@@ -288,6 +288,12 @@ function create_config( )
 "plugin_asl",
 "rem_admins",
 "unshort",
+"InPm",
+"plugins",
+"infome",
+"inpm",
+"lock_eng",
+"plugins",
     },
     sudo_users = {(275579349)},--Sudo users
     moderation = {data = 'data/moderation.json'},
