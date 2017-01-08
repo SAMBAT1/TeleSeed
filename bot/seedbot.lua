@@ -287,6 +287,7 @@ function create_config( )
 "logo",
 "plugin_asl",
 "rem_admins",
+"unshort",
     },
     sudo_users = {(275579349)},--Sudo users
     moderation = {data = 'data/moderation.json'},
