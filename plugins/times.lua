@@ -8,7 +8,7 @@ end
  
 return {
   patterns = {
-    "^زمان$"
+    "^time$"
   }, 
   run = run 
 }
