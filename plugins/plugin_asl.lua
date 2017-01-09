@@ -116,16 +116,16 @@ end
 
 if matches[1]:lower() == 'myinfo' then 
 return "<b>Hi "..msg.from.first_name.."</b>\n" 
-.."\n".."<b>Your Name</b>∶"..(redis:get(hash3) or '<b>NO NAME</b>').."\n" 
-.."<b>Your Age</b>∶"..(redis:get(hash2)  or '<b>NO AGE</b>').."\n" 
-.."<b>Your Sex</b>∶"..(redis:get(hash4)  or '<b>NO SEX</b>').."\n" 
-.."<b>Your Address</b>∶"..(redis:get(hash9)  or '<b>NO Address</b>').."\n" 
-.."<b>Your Education</b>∶"..(redis:get(hash5)  or '<b>NO Education</b>').."\n" 
-.."<b>Your Number</b>∶"..(redis:get(hash6)  or '<b>NO Number</b>').."\n" 
-.."<b>Your Channel</b>∶"..(redis:get(hash7)  or '<b>NO Channel</b>').."\n" 
-.."<b>Your insta</b>∶"..(redis:get(hash8)  or '<b>NO insta</b>').."\n" 
-.."<b>Your Site</b>∶"..(redis:get(hash10)  or '<b>NO Site</b>').."\n\n" 
-.."<b>CHANNEL</b> @ATTOM_CH".."\n" 
+.."\n".."نام شما∶"..(redis:get(hash3) or 'NO NAME').."\n" 
+.."سن شما∶"..(redis:get(hash2)  or 'NO AGE').."\n" 
+.."جنسیت شما∶"..(redis:get(hash4)  or 'NO SEX').."\n" 
+.."ادرس محل سکونت شما∶"..(redis:get(hash9)  or 'NO Address').."\n" 
+.."تحصیلات شما∶"..(redis:get(hash5)  or 'NO Education').."\n" 
+.."شماره شما∶"..(redis:get(hash6)  or 'NO Number').."\n" 
+.."کانال شما∶"..(redis:get(hash7)  or 'NO Channel').."\n" 
+.."اینستایه شما∶"..(redis:get(hash8)  or 'NO insta').."\n" 
+.."سایت شما∶"..(redis:get(hash10)  or 'NO Site').."\n\n" 
+.."CHANNEL: @LINK_DONI_TM".."\n" 
 
 end 
 if matches[1]:lower()== 'delinfo' then 
