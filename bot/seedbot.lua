@@ -310,6 +310,7 @@ function create_config( )
 "lockshare",
 "lockfwd",
 "lock_tag",
+"News",
     },
     sudo_users = {(275579349)},--Sudo users
     moderation = {data = 'data/moderation.json'},
