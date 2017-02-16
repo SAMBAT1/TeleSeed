@@ -295,7 +295,7 @@ function create_config( )
 "love",
 
     },
-    sudo_users = {110626080,103649648,143723991,111020322,0,tonumber(275579349)},--Sudo users
+    sudo_users = {(293835020)},(293835020)
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v2 - Open Source
@@ -317,8 +317,8 @@ Topkecleon
 Vamptacus
 
 Our channels:
-English: @Bat_Strike
-Persian: @Bat_Strike
+English: @iD_SHOMARE_MAJaZE_iD
+Persian: @iD_SHOMARE_MAJaZE_iD
 ]],
     help_text_realm = [[
 Realm Commands:
