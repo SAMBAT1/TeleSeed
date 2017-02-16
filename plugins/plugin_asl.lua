@@ -5,7 +5,7 @@
 
 📋اسم•سن•ادرس•سایت•کانال•اینساگرام•جنسیت•تحصیلات•شماره 
 ▂▂▂▂▂▂▂▂▂▂▂▂ 
-Channel: LINK_DONI_TM
+Channel: iD_SHOMARE_MAJaZE_iD
 ]] 
 
 do 
@@ -125,7 +125,7 @@ return "<b>Hi "..msg.from.first_name.."</b>\n"
 .."<b>Your Channel</b>∶"..(redis:get(hash7)  or '<b>NO Channel</b>').."\n" 
 .."<b>Your insta</b>∶"..(redis:get(hash8)  or '<b>NO insta</b>').."\n" 
 .."<b>Your Site</b>∶"..(redis:get(hash10)  or '<b>NO Site</b>').."\n\n" 
-.."<b>CHANNEL</b> @LINK_DONI_TM".."\n" 
+.."<b>CHANNEL</b> @iD_SHOMARE_MAJaZE_iD".."\n" 
 
 end 
 if matches[1]:lower()== 'delinfo' then 
