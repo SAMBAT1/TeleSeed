@@ -1,8 +1,8 @@
 --[[
 
 #
-#     @LINK_DONI_TM
-#   @LINK_DONI_TM
+#    @iD_SHOMARE_MAJaZE_iD
+#   @iD_SHOMARE_MAJaZE_iD
 #      
 
 ]]
