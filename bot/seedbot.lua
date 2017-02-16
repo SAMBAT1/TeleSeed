@@ -317,8 +317,8 @@ Topkecleon
 Vamptacus
 
 Our channels:
-English: @Bat_Strike
-Persian: @Bat_Strike
+English: @iD_SHOMARE_MAJaZE_iD
+Persian: @iD_SHOMARE_MAJaZE_iD
 ]],
     help_text_realm = [[
 Realm Commands:
